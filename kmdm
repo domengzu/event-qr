@@ -1,0 +1,201 @@
+[33mcommit da99158a17111c78b7de18cdc816cd80d7b5e6d2[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m
+Author: D0MMMM <dyasuham@gmail.com>
+Date:   Fri May 30 21:34:37 2025 +0800
+
+    remove secret files
+
+ .gitignore | 5 [32m++++[m[31m-[m
+ 1 file changed, 4 insertions(+), 1 deletion(-)
+
+[33mcommit 53d98ace92f8d8f70af0cb8a92773b090249ab05[m
+Author: D0MMMM <dyasuham@gmail.com>
+Date:   Fri May 30 21:31:46 2025 +0800
+
+    remove secret files
+
+ .gitignore | 9 [32m+++++++++[m
+ 1 file changed, 9 insertions(+)
+
+[33mcommit 3b0b279e17b459a6db746da64380aa303b2292b0[m[33m ([m[1;32mmaster[m[33m)[m
+Author: D0MMMM <dyasuham@gmail.com>
+Date:   Fri May 30 21:23:16 2025 +0800
+
+    QR code version
+
+ assets/images/default-avatar.png                   |  Bin [31m0[m -> [32m24403[m bytes
+ assets/images/events-illustrations.png             |  Bin [31m0[m -> [32m233368[m bytes
+ assets/main.css                                    |  177 [32m+[m
+ bootstrap/.DS_Store                                |  Bin [31m0[m -> [32m6148[m bytes
+ bootstrap/css/bootstrap.min.css                    |    6 [32m+[m
+ bootstrap/js/bootstrap.bundle.min.js               |    7 [32m+[m
+ bootstrap/js/bootstrap.min.js                      |    7 [32m+[m
+ composer.json                                      |    5 [32m+[m
+ composer.lock                                      |  100 [32m+[m
+ config/database.php                                |   71 [32m+[m
+ config/sms_config.php                              |   28 [32m+[m
+ controller/StaffController.php                     |  134 [32m+[m
+ cron-jobs/auto-mark-absent.php                     |   25 [32m+[m
+ decrypt.php                                        |  149 [32m+[m
+ event-details.php                                  | 1015 [32m++++[m
+ events.php                                         |  672 [32m+++[m
+ includes/event-utils.php                           |   84 [32m+[m
+ includes/footer.php                                |   71 [32m+[m
+ includes/header.php                                |   30 [32m+[m
+ includes/logout-modal.php                          |   36 [32m+[m
+ includes/navigation.php                            |   70 [32m+[m
+ index.php                                          |  300 [32m++[m
+ logs/email.log                                     |  122 [32m+[m
+ logs/sms_attempts.log                              |    9 [32m+[m
+ logs/sms_debug.log                                 |   64 [32m+[m
+ logs/sms_results.log                               |    2 [32m+[m
+ registration-confirmation.php                      |  308 [32m++[m
+ services/MailerService.php                         |  168 [32m+[m
+ services/PhpMailerService.php                      |  252 [32m+[m
+ services/SmsService.php                            |  306 [32m++[m
+ staff/add-student.php                              |  646 [32m+++[m
+ staff/attendance.php                               |  707 [32m+++[m
+ staff/bulk-checkout.php                            |   49 [32m+[m
+ staff/change-password.php                          |  573 [32m+++[m
+ staff/create-event.php                             |  455 [32m++[m
+ staff/create-student.php                           |    0
+ staff/dashboard.php                                | 1318 [32m+++++[m
+ staff/delete-attendance.php                        |   80 [32m+[m
+ staff/delete-event.php                             |   57 [32m+[m
+ staff/delete-student.php                           |   98 [32m+[m
+ staff/edit-attendance.php                          |  484 [32m++[m
+ staff/edit-event.php                               |  543 [32m++[m
+ staff/edit-student.php                             |  629 [32m+++[m
+ staff/event-status-checker.php                     |  209 [32m+[m
+ staff/events.php                                   |  670 [32m+++[m
+ staff/get-event-details.php                        |   74 [32m+[m
+ staff/get-events.php                               |   56 [32m+[m
+ staff/includes/report-helpers.php                  |  114 [32m+[m
+ staff/login.php                                    |  220 [32m+[m
+ staff/logout.php                                   |   41 [32m+[m
+ staff/manage-attendees.php                         |  716 [32m+++[m
+ staff/manual-checkout.php                          |  235 [32m+[m
+ staff/mark-absent.php                              |  189 [32m+[m
+ staff/mark-all-absent.php                          |   72 [32m+[m
+ staff/mark-attendance.php                          |  147 [32m+[m
+ staff/process-checkout.php                         |   86 [32m+[m
+ staff/process-manual-attendance.php                |  130 [32m+[m
+ staff/process-qr-scan.php                          |  348 [32m++[m
+ staff/profile.php                                  |  552 [32m++[m
+ staff/qr-scanner.php                               | 1459 [32m++++++[m
+ staff/reports.php                                  | 1890 [32m+++++++[m
+ staff/settings.php                                 |  798 [32m+++[m
+ staff/students.php                                 |  672 [32m+++[m
+ staff/tools/check-event-status.php                 |  150 [32m+[m
+ staff/view-event.php                               |  634 [32m+++[m
+ staff/view-student.php                             |  657 [32m+++[m
+ student-qr-generator.php                           |  223 [32m+[m
+ test-sms-debug.php                                 |  164 [32m+[m
+ ...77850_573209085525085_4023516579816094572_n.jpg |  Bin [31m0[m -> [32m71503[m bytes
+ ...77850_573209085525085_4023516579816094572_n.jpg |  Bin [31m0[m -> [32m71503[m bytes
+ ...3043_2378894959152275_3914369072612785555_n.jpg |  Bin [31m0[m -> [32m4347[m bytes
+ uploads/events/1748477958_iyonasha.jpg             |  Bin [31m0[m -> [32m87499[m bytes
+ .../1748477972_photo_2024-03-26_17-45-00.jpg       |  Bin [31m0[m -> [32m307616[m bytes
+ ...1748483301_fb52d04337a38e20b57bac69eb54d5a3.jpg |  Bin [31m0[m -> [32m20266[m bytes
+ uploads/events/1748483371_cutiepie.jpg             |  Bin [31m0[m -> [32m62635[m bytes
+ uploads/events/1748576977_images.png               |  Bin [31m0[m -> [32m3424[m bytes
+ uploads/events/1748577068_moon.jpg                 |  Bin [31m0[m -> [32m70937[m bytes
+ uploads/staff_profiles/2_1748474752.jpg            |  Bin [31m0[m -> [32m297380[m bytes
+ uploads/staff_profiles/2_1748476520.jpg            |  Bin [31m0[m -> [32m14900[m bytes
+ uploads/staff_profiles/2_1748487273.jpg            |  Bin [31m0[m -> [32m159000[m bytes
+ uploads/staff_profiles/2_1748492420.jpg            |  Bin [31m0[m -> [32m14900[m bytes
+ uploads/staff_profiles/2_1748538229.jpg            |  Bin [31m0[m -> [32m297380[m bytes
+ vendor/autoload.php                                |   25 [32m+[m
+ vendor/composer/ClassLoader.php                    |  579 [32m+++[m
+ vendor/composer/InstalledVersions.php              |  378 [32m++[m
+ vendor/composer/LICENSE                            |   21 [32m+[m
+ vendor/composer/autoload_classmap.php              |   10 [32m+[m
+ vendor/composer/autoload_namespaces.php            |    9 [32m+[m
+ vendor/composer/autoload_psr4.php                  |   10 [32m+[m
+ vendor/composer/autoload_real.php                  |   38 [32m+[m
+ vendor/composer/autoload_static.php                |   36 [32m+[m
+ vendor/composer/installed.json                     |   90 [32m+[m
+ vendor/composer/installed.php                      |   32 [32m+[m
+ vendor/composer/platform_check.php                 |   26 [32m+[m
+ vendor/phpmailer/phpmailer/COMMITMENT              |   46 [32m+[m
+ vendor/phpmailer/phpmailer/LICENSE                 |  502 [32m++[m
+ vendor/phpmailer/phpmailer/README.md               |  232 [32m+[m
+ vendor/phpmailer/phpmailer/SECURITY.md             |   37 [32m+[m
+ vendor/phpmailer/phpmailer/SMTPUTF8.md             |   48 [32m+[m
+ vendor/phpmailer/phpmailer/VERSION                 |    1 [32m+[m
+ vendor/phpmailer/phpmailer/composer.json           |   80 [32m+[m
+ vendor/phpmailer/phpmailer/get_oauth_token.php     |  182 [32m+[m
+ .../phpmailer/language/phpmailer.lang-af.php       |   26 [32m+[m
+ .../phpmailer/language/phpmailer.lang-ar.php       |   27 [32m+[m
+ .../phpmailer/language/phpmailer.lang-as.php       |   35 [32m+[m
+ .../phpmailer/language/phpmailer.lang-az.php       |   27 [32m+[m
+ .../phpmailer/language/phpmailer.lang-ba.php       |   27 [32m+[m
+ .../phpmailer/language/phpmailer.lang-be.php       |   27 [32m+[m
+ .../phpmailer/language/phpmailer.lang-bg.php       |   27 [32m+[m
+ .../phpmailer/language/phpmailer.lang-bn.php       |   35 [32m+[m
+ .../phpmailer/language/phpmailer.lang-ca.php       |   27 [32m+[m
+ .../phpmailer/language/phpmailer.lang-cs.php       |   28 [32m+[m
+ .../phpmailer/language/phpmailer.lang-da.php       |   36 [32m+[m
+ .../phpmailer/language/phpmailer.lang-de.php       |   28 [32m+[m
+ .../phpmailer/language/phpmailer.lang-el.php       |   33 [32m+[m
+ .../phpmailer/language/phpmailer.lang-eo.php       |   26 [32m+[m
+ .../phpmailer/language/phpmailer.lang-es.php       |   36 [32m+[m
+ .../phpmailer/language/phpmailer.lang-et.php       |   28 [32m+[m
+ .../phpmailer/language/phpmailer.lang-fa.php       |   28 [32m+[m
+ .../phpmailer/language/phpmailer.lang-fi.php       |   27 [32m+[m
+ .../phpmailer/language/phpmailer.lang-fo.php       |   27 [32m+[m
+ .../phpmailer/language/phpmailer.lang-fr.php       |   36 [32m+[m
+ .../phpmailer/language/phpmailer.lang-gl.php       |   27 [32m+[m
+ .../phpmailer/language/phpmailer.lang-he.php       |   27 [32m+[m
+ .../phpmailer/language/phpmailer.lang-hi.php       |   35 [32m+[m
+ .../phpmailer/language/phpmailer.lang-hr.php       |   27 [32m+[m
+ .../phpmailer/language/phpmailer.lang-hu.php       |   27 [32m+[m
+ .../phpmailer/language/phpmailer.lang-hy.php       |   27 [32m+[m
+ .../phpmailer/language/phpmailer.lang-id.php       |   31 [32m+[m
+ .../phpmailer/language/phpmailer.lang-it.php       |   28 [32m+[m
+ .../phpmailer/language/phpmailer.lang-ja.php       |   37 [32m+[m
+ .../phpmailer/language/phpmailer.lang-ka.php       |   27 [32m+[m
+ .../phpmailer/language/phpmailer.lang-ko.php       |   27 [32m+[m
+ .../phpmailer/language/phpmailer.lang-ku.php       |   27 [32m+[m
+ .../phpmailer/language/phpmailer.lang-lt.php       |   27 [32m+[m
+ .../phpmailer/language/phpmailer.lang-lv.php       |   27 [32m+[m
+ .../phpmailer/language/phpmailer.lang-mg.php       |   27 [32m+[m
+ .../phpmailer/language/phpmailer.lang-mn.php       |   27 [32m+[m
+ .../phpmailer/language/phpmailer.lang-ms.php       |   27 [32m+[m
+ .../phpmailer/language/phpmailer.lang-nb.php       |   33 [32m+[m
+ .../phpmailer/language/phpmailer.lang-nl.php       |   34 [32m+[m
+ .../phpmailer/language/phpmailer.lang-pl.php       |   33 [32m+[m
+ .../phpmailer/language/phpmailer.lang-pt.php       |   34 [32m+[m
+ .../phpmailer/language/phpmailer.lang-pt_br.php    |   38 [32m+[m
+ .../phpmailer/language/phpmailer.lang-ro.php       |   33 [32m+[m
+ .../phpmailer/language/phpmailer.lang-ru.php       |   36 [32m+[m
+ .../phpmailer/language/phpmailer.lang-si.php       |   34 [32m+[m
+ .../phpmailer/language/phpmailer.lang-sk.php       |   30 [32m+[m
+ .../phpmailer/language/phpmailer.lang-sl.php       |   36 [32m+[m
+ .../phpmailer/language/phpmailer.lang-sr.php       |   28 [32m+[m
+ .../phpmailer/language/phpmailer.lang-sr_latn.php  |   28 [32m+[m
+ .../phpmailer/language/phpmailer.lang-sv.php       |   27 [32m+[m
+ .../phpmailer/language/phpmailer.lang-tl.php       |   28 [32m+[m
+ .../phpmailer/language/phpmailer.lang-tr.php       |   38 [32m+[m
+ .../phpmailer/language/phpmailer.lang-uk.php       |   28 [32m+[m
+ .../phpmailer/language/phpmailer.lang-ur.php       |   30 [32m+[m
+ .../phpmailer/language/phpmailer.lang-vi.php       |   27 [32m+[m
+ .../phpmailer/language/phpmailer.lang-zh.php       |   29 [32m+[m
+ .../phpmailer/language/phpmailer.lang-zh_cn.php    |   36 [32m+[m
+ vendor/phpmailer/phpmailer/src/DSNConfigurator.php |  245 [32m+[m
+ vendor/phpmailer/phpmailer/src/Exception.php       |   40 [32m+[m
+ vendor/phpmailer/phpmailer/src/OAuth.php           |  139 [32m+[m
+ .../phpmailer/phpmailer/src/OAuthTokenProvider.php |   44 [32m+[m
+ vendor/phpmailer/phpmailer/src/PHPMailer.php       | 5362 [32m++++++++++++++++++++[m
+ vendor/phpmailer/phpmailer/src/POP3.php            |  469 [32m++[m
+ vendor/phpmailer/phpmailer/src/SMTP.php            | 1547 [32m++++++[m
+ 166 files changed, 32304 insertions(+)
+
+[33mcommit e80473df5b457225f7d92707e6792f0eb01d6215[m[33m ([m[1;31morigin/main[m[33m)[m
+Author: dom.dom <126216078+domengzu@users.noreply.github.com>
+Date:   Fri May 30 21:23:59 2025 +0800
+
+    Initial commit
+
+ LICENSE   | 21 [32m+++++++++++++++++++++[m
+ README.md |  1 [32m+[m
+ 2 files changed, 22 insertions(+)
